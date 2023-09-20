@@ -9,8 +9,6 @@ import { useRoute } from "vue-router";
 import { ref } from "vue";
 import Cars from "../components/CarsComponent.vue";
 
-
-
 const route = useRoute();
 console.log(route);
 

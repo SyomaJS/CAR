@@ -23,10 +23,11 @@ const routes = [
   },
 
   {
-    path: "/car/:id",
+    path: "/carinfo",
     name: "CarDetail",
     component: Car,
     props: true,
+    query: true,
   },
 ];
 

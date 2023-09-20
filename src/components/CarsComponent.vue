@@ -44,9 +44,8 @@ const router = useRouter();
 function customFunction(car) {
   console.log("Card clicked! Custom function executed.");
 
-  // Optionally, you can navigate to a route here
   router.push({
-    path: `/car/${car.id}`,
+    name: "CarDetail", // Use the route name defined in your router
     query: { car: car.id },
   });
 }
@@ -58,13 +57,14 @@ function customFunction(car) {
   color: black;
 }
 
+h1 {
+  color: white;
+}
+
 .row {
-  background: rgb(0, 85, 142);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 85, 142, 1) 6%,
-    rgba(255, 255, 255, 1) 76%
-  );
+  background: url(../assets/bmw_background.jpg),
+    rgb(0, 0, 0) 50% / cover no-repeat;
+  background-size: 100%;
   height: 100vh;
 }
 </style>
